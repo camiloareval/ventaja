@@ -1,0 +1,22 @@
+<canvas width="600" height="400">  </canvas>
+
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "grey";
+    pincel.fillRect(0,0,600,400);
+
+    function exibirAlerta(evento){
+        console.log(evento);
+        alert("usted hizo un clic")
+    }
+//cuando llamamos a la funcion no es necesario colocar los parentesis para que no afecte al programa.
+    
+pantalla.onclick = exibirAlerta;
+
+
+
+
+</script>
